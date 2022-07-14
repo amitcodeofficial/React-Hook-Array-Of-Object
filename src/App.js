@@ -25,8 +25,7 @@ export default function App() {
       <p><button type="submit" onClick={() => setDetails([...details,LoginDetails])}>Submit</button></p>
       {details.map(data => (
         <div>
-        <p>{data.email}</p>
-        <p>{data.password}</p>
+        <p>{data.email} {data.password}</p>
       </div>
       ))}
     </div>
